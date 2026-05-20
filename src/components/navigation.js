@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-// import LoginModal from '@/components/LoginModal'
+import LoginModal from '@/components/LoginModal'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -95,7 +95,7 @@ export default function Navigation() {
                 </span>
               </Link>
 
-              {/* Login Button (Desktop) */}
+              { /*Login Button (Desktop) */}
               <div className="hidden md:block">
                 <button
                   onClick={() => setIsLoginModalOpen(true)}
@@ -159,10 +159,10 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* <LoginModal
+      <LoginModal
         isOpen={isLoginModalOpen}
         onClose={() => setIsLoginModalOpen(false)}
-      /> */}
+      />
     </>
   )
 }
