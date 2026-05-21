@@ -1,5 +1,5 @@
 import { Prompt } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/navigation"
 
 const prompt = Prompt({
